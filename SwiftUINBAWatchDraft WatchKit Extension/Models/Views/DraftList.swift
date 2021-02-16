@@ -8,10 +8,22 @@
 import SwiftUI
 
 struct DraftList: View {
-    // add properties here
+    @State private var currentIndex = 0.0
+    @State private var isShowingDetail = false
+    private let numberOfVisibleCards = 3
+    private let testPicks = 10
     
     var body: some View {
-        Text("Draft List")
+        VStack(spacing: 10) {
+            VStack(spacing: 0) {
+                Text("ROUND 1")
+                    .custom(font: .bold, size: 20)
+                Divider()
+            }
+            // Add next step here
+            
+        }
+        .navigationBarTitle(Text("By Round"))
     }
     
     // add topCard here
