@@ -123,14 +123,9 @@
 		468C177025DC0A0B00BB59D4 /* SwiftUINBAWatchDraft WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				468C177125DC0A0B00BB59D4 /* SwiftUINBAWatchDraftApp.swift */,
-				468C177325DC0A0B00BB59D4 /* ContentView.swift */,
-				468C177525DC0A0B00BB59D4 /* NotificationController.swift */,
-				468C177725DC0A0B00BB59D4 /* NotificationView.swift */,
-				468C177925DC0A0B00BB59D4 /* ComplicationController.swift */,
+				468C179A25DC0C3D00BB59D4 /* Application */,
 				468C177B25DC0A0C00BB59D4 /* Assets.xcassets */,
 				468C178025DC0A0C00BB59D4 /* Info.plist */,
-				468C178125DC0A0C00BB59D4 /* PushNotificationPayload.apns */,
 				468C177D25DC0A0C00BB59D4 /* Preview Content */,
 			);
 			path = "SwiftUINBAWatchDraft WatchKit Extension";
@@ -142,6 +137,19 @@
 				468C177E25DC0A0C00BB59D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		468C179A25DC0C3D00BB59D4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				468C177125DC0A0B00BB59D4 /* SwiftUINBAWatchDraftApp.swift */,
+				468C177325DC0A0B00BB59D4 /* ContentView.swift */,
+				468C177525DC0A0B00BB59D4 /* NotificationController.swift */,
+				468C177725DC0A0B00BB59D4 /* NotificationView.swift */,
+				468C177925DC0A0B00BB59D4 /* ComplicationController.swift */,
+				468C178125DC0A0C00BB59D4 /* PushNotificationPayload.apns */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
