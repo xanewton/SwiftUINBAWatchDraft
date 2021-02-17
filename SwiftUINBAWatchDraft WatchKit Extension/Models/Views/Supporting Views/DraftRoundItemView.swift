@@ -12,7 +12,7 @@ struct DraftRoundItemView: View {
     let round: DraftRound
 
     var body: some View {
-        NavigationLink(destination: DraftList()) {
+        NavigationLink(destination: DraftList(data: round)) {
             ZStack {
                 Image("draft-menu-background").resizable()
                 VStack(spacing: -15) {
