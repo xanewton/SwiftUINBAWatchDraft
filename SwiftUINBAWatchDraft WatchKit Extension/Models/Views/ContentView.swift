@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         List {
-            ForEach(0..<2) { _ in
-                DraftRoundItemView()
+            ForEach(draftData) { round in
+                DraftRoundItemView(round: round)
             }
         }
         .listStyle(CarouselListStyle())

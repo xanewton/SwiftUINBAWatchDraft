@@ -9,14 +9,16 @@
 import SwiftUI
 
 struct DraftRoundItemView: View {
+    let round: DraftRound
+
     var body: some View {
         NavigationLink(destination: DraftList()) {
             ZStack {
                 Image("draft-menu-background").resizable()
                 VStack(spacing: -15) {
-                    Text("ROUND")
+                    Text(round.headline.uppercased())
                         .custom(font: .bold, size: 16)
-                    Text("1")
+                    Text(round.subheadline.uppercased())
                         .custom(font: .ultralight, size: 70)
                 }.offset(x: -10, y: 10)
             }
@@ -32,11 +34,13 @@ struct DraftRoundItemView: View {
 
 struct DraftRoundItemView_Previews: PreviewProvider {
     static var previews: some View {
-        DraftRoundItemView()
+        DraftRoundItemView(round: sampleRound)
     }
 }
 
 
 extension DraftRoundItemView_Previews {
-    
+    static var sampleRound: DraftRound  {
+        return MockDraftPreviewService.draftRound
+    }
 }
