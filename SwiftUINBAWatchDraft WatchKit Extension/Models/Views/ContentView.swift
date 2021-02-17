@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         List {
             ForEach(0..<2) { _ in
-                NavigationLink(destination: EmptyView()) {
+                NavigationLink(destination: DraftList()) {
                     ZStack {
                         Image("draft-menu-background").resizable()
                         VStack(spacing: -15) {
