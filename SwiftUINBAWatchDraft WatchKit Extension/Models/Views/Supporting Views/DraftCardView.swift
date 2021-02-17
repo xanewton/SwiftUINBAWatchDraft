@@ -10,7 +10,36 @@ import SwiftUI
 
 struct DraftCardView: View {
     var body: some View {
-        Text("Draft Card View")
+        VStack(alignment: .leading, spacing: -3) {
+            topCard
+            bottomCard
+        }
+    }
+    
+    var topCard: some View {
+        HStack {
+            Image("pelicans").frame(height: 56)
+            Spacer()
+            Text(String(format: "%02d", 1))
+                .custom(font: .bold, size: 50)
+        }
+        .frame(height: 48)
+        .background(Color("pelicans"))
+    }
+    
+    var bottomCard: some View {
+        VStack(spacing: -5) {
+            Text("ZION")
+                .custom(font: .ultralight, size: 13)
+            Text("WILLIAMS")
+                .custom(font: .bold, size: 20)
+            Text("POWER FORWARD")
+                .custom(font: .ultralight, size: 10)
+        }
+        .frame(minWidth: 0, maxWidth: .infinity)
+        .frame(height: 60, alignment: .center)
+        .background(Color.white)
+        .foregroundColor(.black)
     }
 }
 

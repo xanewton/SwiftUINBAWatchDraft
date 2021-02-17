@@ -287,8 +287,8 @@
 			children = (
 				46A1400625DC18CF00CA912A /* DraftList.swift */,
 				468C177325DC0A0B00BB59D4 /* ContentView.swift */,
-				46A1400825DC18CF00CA912A /* Supporting Views */,
 				46A1400F25DC18CF00CA912A /* DraftPlayerDetailView.swift */,
+				46A1400825DC18CF00CA912A /* Supporting Views */,
 			);
 			name = Views;
 			path = Models/Views;
