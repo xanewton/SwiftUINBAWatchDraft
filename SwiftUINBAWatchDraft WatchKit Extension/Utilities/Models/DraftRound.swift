@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct DraftRound: Decodable, Identifiable  {
+    let id = UUID()
+    let headline: String
+    let subheadline: String
+    let round: String
+    let picks: [Pick]
+}

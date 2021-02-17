@@ -8,3 +8,11 @@
 
 import UIKit
 
+struct DraftRoundItem {
+    let id = UUID()
+    let headline: String
+    let subheadline: String
+    let leading: CGFloat
+    let top: CGFloat
+    let fontSize: CGFloat
+}

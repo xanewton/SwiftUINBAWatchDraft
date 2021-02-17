@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4633808E25DDE0E40067C699 /* DraftRoundItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4633808525DDE0E40067C699 /* DraftRoundItem.swift */; };
+		4633808F25DDE0E40067C699 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4633808625DDE0E40067C699 /* Data.swift */; };
+		4633809025DDE0E40067C699 /* Pick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4633808725DDE0E40067C699 /* Pick.swift */; };
+		4633809125DDE0E40067C699 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4633808825DDE0E40067C699 /* Team.swift */; };
+		4633809225DDE0E40067C699 /* MockDraftPreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4633808925DDE0E40067C699 /* MockDraftPreviewService.swift */; };
+		4633809325DDE0E40067C699 /* draft.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4633808A25DDE0E40067C699 /* draft.plist */; };
+		4633809425DDE0E40067C699 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4633808B25DDE0E40067C699 /* Prospect.swift */; };
+		4633809525DDE0E40067C699 /* DraftRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4633808C25DDE0E40067C699 /* DraftRound.swift */; };
+		4633809625DDE0E40067C699 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4633808D25DDE0E40067C699 /* Stat.swift */; };
 		468C176125DC0A0A00BB59D4 /* SwiftUINBAWatchDraft WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 468C176025DC0A0A00BB59D4 /* SwiftUINBAWatchDraft WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		468C176625DC0A0B00BB59D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468C176525DC0A0B00BB59D4 /* Assets.xcassets */; };
 		468C176D25DC0A0B00BB59D4 /* SwiftUINBAWatchDraft WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 468C176C25DC0A0B00BB59D4 /* SwiftUINBAWatchDraft WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -18,16 +27,6 @@
 		468C177C25DC0A0C00BB59D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468C177B25DC0A0C00BB59D4 /* Assets.xcassets */; };
 		468C177F25DC0A0C00BB59D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468C177E25DC0A0C00BB59D4 /* Preview Assets.xcassets */; };
 		468C179325DC0A3600BB59D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 468C179225DC0A3600BB59D4 /* README.md */; };
-		46A13FE725DC18B800CA912A /* DraftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A13FDD25DC18B800CA912A /* DraftService.swift */; };
-		46A13FE825DC18B800CA912A /* DraftRoundItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A13FDE25DC18B800CA912A /* DraftRoundItem.swift */; };
-		46A13FE925DC18B800CA912A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A13FDF25DC18B800CA912A /* Data.swift */; };
-		46A13FEA25DC18B800CA912A /* Pick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A13FE025DC18B800CA912A /* Pick.swift */; };
-		46A13FEB25DC18B800CA912A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A13FE125DC18B800CA912A /* Team.swift */; };
-		46A13FEC25DC18B800CA912A /* MockDraftPreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A13FE225DC18B800CA912A /* MockDraftPreviewService.swift */; };
-		46A13FED25DC18B800CA912A /* draft.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46A13FE325DC18B800CA912A /* draft.plist */; };
-		46A13FEE25DC18B800CA912A /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A13FE425DC18B800CA912A /* Prospect.swift */; };
-		46A13FEF25DC18B800CA912A /* DraftRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A13FE525DC18B800CA912A /* DraftRound.swift */; };
-		46A13FF025DC18B800CA912A /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A13FE625DC18B800CA912A /* Stat.swift */; };
 		46A1401225DC18CF00CA912A /* CardStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A13FF625DC18CF00CA912A /* CardStackModifier.swift */; };
 		46A1401325DC18CF00CA912A /* LengthFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A13FF725DC18CF00CA912A /* LengthFormatters.swift */; };
 		46A1401425DC18CF00CA912A /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A13FF925DC18CF00CA912A /* ScaledFont.swift */; };
@@ -93,6 +92,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4633808525DDE0E40067C699 /* DraftRoundItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftRoundItem.swift; sourceTree = "<group>"; };
+		4633808625DDE0E40067C699 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4633808725DDE0E40067C699 /* Pick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pick.swift; sourceTree = "<group>"; };
+		4633808825DDE0E40067C699 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		4633808925DDE0E40067C699 /* MockDraftPreviewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDraftPreviewService.swift; sourceTree = "<group>"; };
+		4633808A25DDE0E40067C699 /* draft.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = draft.plist; sourceTree = "<group>"; };
+		4633808B25DDE0E40067C699 /* Prospect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		4633808C25DDE0E40067C699 /* DraftRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftRound.swift; sourceTree = "<group>"; };
+		4633808D25DDE0E40067C699 /* Stat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
 		468C175C25DC0A0A00BB59D4 /* SwiftUINBAWatchDraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUINBAWatchDraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		468C176025DC0A0A00BB59D4 /* SwiftUINBAWatchDraft WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUINBAWatchDraft WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		468C176525DC0A0B00BB59D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,16 +116,6 @@
 		468C178025DC0A0C00BB59D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		468C178125DC0A0C00BB59D4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		468C179225DC0A3600BB59D4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		46A13FDD25DC18B800CA912A /* DraftService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftService.swift; sourceTree = "<group>"; };
-		46A13FDE25DC18B800CA912A /* DraftRoundItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftRoundItem.swift; sourceTree = "<group>"; };
-		46A13FDF25DC18B800CA912A /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		46A13FE025DC18B800CA912A /* Pick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pick.swift; sourceTree = "<group>"; };
-		46A13FE125DC18B800CA912A /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		46A13FE225DC18B800CA912A /* MockDraftPreviewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDraftPreviewService.swift; sourceTree = "<group>"; };
-		46A13FE325DC18B800CA912A /* draft.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = draft.plist; sourceTree = "<group>"; };
-		46A13FE425DC18B800CA912A /* Prospect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
-		46A13FE525DC18B800CA912A /* DraftRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftRound.swift; sourceTree = "<group>"; };
-		46A13FE625DC18B800CA912A /* Stat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
 		46A13FF625DC18CF00CA912A /* CardStackModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackModifier.swift; sourceTree = "<group>"; };
 		46A13FF725DC18CF00CA912A /* LengthFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LengthFormatters.swift; sourceTree = "<group>"; };
 		46A13FF925DC18CF00CA912A /* ScaledFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
@@ -151,6 +149,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4633808425DDE0E40067C699 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4633808525DDE0E40067C699 /* DraftRoundItem.swift */,
+				4633808625DDE0E40067C699 /* Data.swift */,
+				4633808725DDE0E40067C699 /* Pick.swift */,
+				4633808825DDE0E40067C699 /* Team.swift */,
+				4633808925DDE0E40067C699 /* MockDraftPreviewService.swift */,
+				4633808A25DDE0E40067C699 /* draft.plist */,
+				4633808B25DDE0E40067C699 /* Prospect.swift */,
+				4633808C25DDE0E40067C699 /* DraftRound.swift */,
+				4633808D25DDE0E40067C699 /* Stat.swift */,
+			);
+			name = Models;
+			path = Utilities/Models;
+			sourceTree = "<group>";
+		};
 		468C175525DC0A0A00BB59D4 = {
 			isa = PBXGroup;
 			children = (
@@ -185,7 +200,7 @@
 			children = (
 				468C179A25DC0C3D00BB59D4 /* Application */,
 				468C178025DC0A0C00BB59D4 /* Info.plist */,
-				46A13FDC25DC18B800CA912A /* Models */,
+				4633808425DDE0E40067C699 /* Models */,
 				46A13FF425DC18CF00CA912A /* Utilities */,
 				46A1400525DC18CF00CA912A /* Views */,
 				468C177D25DC0A0C00BB59D4 /* Preview Content */,
@@ -212,23 +227,6 @@
 				468C178125DC0A0C00BB59D4 /* PushNotificationPayload.apns */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		46A13FDC25DC18B800CA912A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				46A13FDD25DC18B800CA912A /* DraftService.swift */,
-				46A13FDE25DC18B800CA912A /* DraftRoundItem.swift */,
-				46A13FDF25DC18B800CA912A /* Data.swift */,
-				46A13FE025DC18B800CA912A /* Pick.swift */,
-				46A13FE125DC18B800CA912A /* Team.swift */,
-				46A13FE225DC18B800CA912A /* MockDraftPreviewService.swift */,
-				46A13FE325DC18B800CA912A /* draft.plist */,
-				46A13FE425DC18B800CA912A /* Prospect.swift */,
-				46A13FE525DC18B800CA912A /* DraftRound.swift */,
-				46A13FE625DC18B800CA912A /* Stat.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		46A13FF425DC18CF00CA912A /* Utilities */ = {
@@ -423,9 +421,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A1401725DC18CF00CA912A /* AvenirNextCondensed-Bold.ttf in Resources */,
-				46A13FED25DC18B800CA912A /* draft.plist in Resources */,
 				46A1401A25DC18CF00CA912A /* AvenirNextCondensed-Heavy.ttf in Resources */,
 				46A1401925DC18CF00CA912A /* AvenirNextCondensed-Medium.ttf in Resources */,
+				4633809325DDE0E40067C699 /* draft.plist in Resources */,
 				46A1401625DC18CF00CA912A /* AvenirNextCondensed-Regular.ttf in Resources */,
 				468C177F25DC0A0C00BB59D4 /* Preview Assets.xcassets in Resources */,
 				46A1401825DC18CF00CA912A /* AvenirNextCondensed-DemiBold.ttf in Resources */,
@@ -444,30 +442,29 @@
 				46A1402425DC18CF00CA912A /* DraftPlayerDetailInfoView.swift in Sources */,
 				46A1401D25DC18CF00CA912A /* Measurement+Extensions.swift in Sources */,
 				46A1402125DC18CF00CA912A /* DraftRoundCardView.swift in Sources */,
+				4633808E25DDE0E40067C699 /* DraftRoundItem.swift in Sources */,
 				468C177625DC0A0B00BB59D4 /* NotificationController.swift in Sources */,
 				46A1401425DC18CF00CA912A /* ScaledFont.swift in Sources */,
-				46A13FEE25DC18B800CA912A /* Prospect.swift in Sources */,
-				46A13FEC25DC18B800CA912A /* MockDraftPreviewService.swift in Sources */,
 				46A1402025DC18CF00CA912A /* DraftPlayerDetailStatsView.swift in Sources */,
+				4633808F25DDE0E40067C699 /* Data.swift in Sources */,
+				4633809025DDE0E40067C699 /* Pick.swift in Sources */,
+				4633809625DDE0E40067C699 /* Stat.swift in Sources */,
 				468C177425DC0A0B00BB59D4 /* ContentView.swift in Sources */,
 				468C177A25DC0A0B00BB59D4 /* ComplicationController.swift in Sources */,
+				4633809425DDE0E40067C699 /* Prospect.swift in Sources */,
 				468C177225DC0A0B00BB59D4 /* SwiftUINBAWatchDraftApp.swift in Sources */,
 				468C177825DC0A0B00BB59D4 /* NotificationView.swift in Sources */,
-				46A13FE725DC18B800CA912A /* DraftService.swift in Sources */,
-				46A13FEA25DC18B800CA912A /* Pick.swift in Sources */,
 				46A1402625DC18CF00CA912A /* DraftPlayerDetailView.swift in Sources */,
 				46A1401E25DC18CF00CA912A /* DraftList.swift in Sources */,
 				46A1401225DC18CF00CA912A /* CardStackModifier.swift in Sources */,
 				46A1401C25DC18CF00CA912A /* Palette+Color.swift in Sources */,
 				46A1401325DC18CF00CA912A /* LengthFormatters.swift in Sources */,
 				46A1402325DC18CF00CA912A /* DraftCardView.swift in Sources */,
-				46A13FEF25DC18B800CA912A /* DraftRound.swift in Sources */,
+				4633809125DDE0E40067C699 /* Team.swift in Sources */,
 				46A1402225DC18CF00CA912A /* DraftRoundItemView.swift in Sources */,
-				46A13FE825DC18B800CA912A /* DraftRoundItem.swift in Sources */,
+				4633809525DDE0E40067C699 /* DraftRound.swift in Sources */,
 				46A1402525DC18CF00CA912A /* DraftPlayerDetailHeaderView.swift in Sources */,
-				46A13FF025DC18B800CA912A /* Stat.swift in Sources */,
-				46A13FEB25DC18B800CA912A /* Team.swift in Sources */,
-				46A13FE925DC18B800CA912A /* Data.swift in Sources */,
+				4633809225DDE0E40067C699 /* MockDraftPreviewService.swift in Sources */,
 				46A1401525DC18CF00CA912A /* CustomTextStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

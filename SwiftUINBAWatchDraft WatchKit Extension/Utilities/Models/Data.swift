@@ -8,6 +8,7 @@
 
 import Foundation
 
+let draftData:[DraftRound] = PlistData.load("draft.plist")
 
 struct PlistData {
     static func load<T: Decodable>(_ filename: String) -> T {
