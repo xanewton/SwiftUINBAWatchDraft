@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct DraftCardView: View {
+    let prospect: Prospect
+
     var body: some View {
         VStack(alignment: .leading, spacing: -3) {
             topCard
@@ -45,12 +47,14 @@ struct DraftCardView: View {
 
 struct DraftCardView_Previews: PreviewProvider {
     static var previews: some View {
-        DraftCardView()
+        DraftCardView(prospect: prospect)
     }
 }
 
 extension DraftCardView_Previews {
-    
+    static var prospect: Prospect {
+        return MockDraftPreviewService.currentProspect()
+    }
 }
 
 

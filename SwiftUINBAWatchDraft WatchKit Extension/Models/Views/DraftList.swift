@@ -16,7 +16,7 @@ struct DraftList: View {
                 Text(data.round)
                     .custom(font: .bold, size: 20)
                 Divider()
-                DraftRoundCardView()
+                DraftRoundCardView(picks: data.picks)
             }
         }
         .navigationBarTitle(Text("By Round"))
