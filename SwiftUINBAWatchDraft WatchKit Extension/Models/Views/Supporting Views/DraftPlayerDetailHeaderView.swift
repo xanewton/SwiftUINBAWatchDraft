@@ -9,11 +9,13 @@
 import SwiftUI
 
 struct DraftPlayerDetailHeaderView: View {
+    var prospect: Prospect
+
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             VStack(spacing: -35) {
                 HStack(alignment:.top, spacing: 0) {
-                    Text("1")
+                    Text("\(prospect.round)")
                         .custom(font: .ultralight, size: 19)
                         .offset(x: -2, y: 15)
                     Text(String(format: "%02d", 1))
@@ -24,16 +26,16 @@ struct DraftPlayerDetailHeaderView: View {
                 
                 VStack(spacing: -1) {
                     HStack {
-                        Image("pelicans").offset(x: 29)
-                        Image("zion-williamson").offset(x:0, y: -25)
+                        Image(prospect.team.name.lowercased()).offset(x: 29)
+                        Image(prospect.image.lowercased()).offset(x:0, y: -25)
                     }
                     .frame(height: 58)
                     .frame(minWidth: 0, maxWidth: .infinity)
-                    .background(Color("pelicans"))
+                    .background(Color(prospect.team.name.lowercased()))
                     VStack(spacing: -5) {
-                        Text("ZION")
+                        Text(prospect.firstName.uppercased())
                             .custom(font: .ultralight, size: 13)
-                        Text("WILLIAMSON")
+                        Text(prospect.lastName.uppercased())
                             .custom(font: .bold, size: 20)
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
@@ -47,6 +49,6 @@ struct DraftPlayerDetailHeaderView: View {
 
 struct DraftPlayerDetailHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        DraftPlayerDetailHeaderView()
+        DraftPlayerDetailHeaderView(prospect: Prospect(firstName: "Craig", lastName: "Clayton", position: "PG", ht: 85, wt: 235, image: "", experience: "", birthPlace: "", analysis: "", round: 1, draftPosition: 1, school: "", team: Team(name: "Lakers", market: "Los Angeles"), stats: [Stat(value: "99.9", name: "pts"), Stat(value: "99.9", name: "reb"), Stat(value: "99.9", name: "ast"), Stat(value: "99.9", name: "efg")]))
     }
 }

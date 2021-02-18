@@ -295,12 +295,12 @@
 		46A1400825DC18CF00CA912A /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
-				46A1400925DC18CF00CA912A /* DraftPlayerDetailStatsView.swift */,
 				46A1400A25DC18CF00CA912A /* DraftRoundCardView.swift */,
 				46A1400B25DC18CF00CA912A /* DraftRoundItemView.swift */,
 				46A1400C25DC18CF00CA912A /* DraftCardView.swift */,
-				46A1400D25DC18CF00CA912A /* DraftPlayerDetailInfoView.swift */,
 				46A1400E25DC18CF00CA912A /* DraftPlayerDetailHeaderView.swift */,
+				46A1400925DC18CF00CA912A /* DraftPlayerDetailStatsView.swift */,
+				46A1400D25DC18CF00CA912A /* DraftPlayerDetailInfoView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";

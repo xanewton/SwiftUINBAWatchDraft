@@ -13,7 +13,7 @@ struct DraftList: View {
     var body: some View {
         VStack(spacing: 10) {
             VStack(spacing: 0) {
-                Text(data.round)
+                Text(data.round.uppercased())
                     .custom(font: .bold, size: 20)
                 Divider()
                 DraftRoundCardView(picks: data.picks)
