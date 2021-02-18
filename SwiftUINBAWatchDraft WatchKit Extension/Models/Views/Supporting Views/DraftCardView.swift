@@ -20,22 +20,23 @@ struct DraftCardView: View {
     
     var topCard: some View {
         HStack {
-            Image("pelicans").frame(height: 56)
+            Image(prospect.team.name.lowercased())
+                .frame(height: 56)
             Spacer()
-            Text(String(format: "%02d", 1))
+            Text(String(format: "%02d", prospect.draftPosition))
                 .custom(font: .bold, size: 50)
         }
         .frame(height: 48)
-        .background(Color("pelicans"))
+        .background(Color(prospect.team.name.lowercased()))
     }
     
     var bottomCard: some View {
         VStack(spacing: -5) {
-            Text("ZION")
+            Text(prospect.firstName.uppercased())
                 .custom(font: .ultralight, size: 13)
-            Text("WILLIAMS")
+            Text(prospect.lastName.uppercased())
                 .custom(font: .bold, size: 20)
-            Text("POWER FORWARD")
+            Text(prospect.position.uppercased())
                 .custom(font: .ultralight, size: 10)
         }
         .frame(minWidth: 0, maxWidth: .infinity)
